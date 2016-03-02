@@ -48,25 +48,26 @@
 		</ul>
 	</section>
 	<div class="wrapper style2 align-center">
-		<form method="get" id="Order" action="cart.jsp">
+		<form method="post" id="Order" action="cart">
 			<header class="major">
 				<h2>Coffee by Pigeon</h2>
 			</header>
 			<div class="container 50%">
-			
+
 				<div class="12u$(xsmall) align-center select-wrapper">
-					
+
 					<select id="name" name="c_name">
 						<option value="Light Roast" selected>Light Roast</option>
 						<option value="Dark Roast">Dark Roast</option>
-						<option value="Cappuccino">Cappuccino</option>
+						<option value="Decaf">Decaf</option>
 						<option value="Latte">Latte</option>
-						<option value="Espresso">Espresso</option>
 						<option value="Macchiato">Macchiato</option>
+						<option value="Cappuccino">Cappuccino</option>
+						<option value="Espresso">Espresso</option>
 					</select>
 
 				</div>
-			
+
 			</div>
 			<h3>
 				<label for="size">Size:</label>
@@ -83,8 +84,6 @@
 				<label for="options">Options:</label>
 			</h3>
 			<ul>
-				<input type="checkbox" id="decaf" name="options" value="Decaf">
-				<label for="decaf">Decaf</label>
 				<input type="checkbox" id="cream" name="options" value="Cream">
 				<label for="cream">Cream</label>
 				<input type="checkbox" id="sugar" name="options" value="Sugar">
@@ -107,7 +106,8 @@
 				<input type="checkbox" id="caramel" name="options" value="Caramel">
 				<label for="caramel">Caramel</label>
 			</ul>
-			<input type="submit"> <input type="reset">
+			<input type="submit" value="Place Order"> <input type="reset"
+				value="Reset">
 		</form>
 	</div>
 
